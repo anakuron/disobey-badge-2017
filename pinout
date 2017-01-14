@@ -1,0 +1,30 @@
+ISP pinout from left to right at the bottom of the badge
+
+gnd
+reset
+mosi
+sck
+vcc
+miso
+
+pinouts for leds
+
+morse led B0
+
+led 1 B3
+led 2 B6
+led3 B7
+led4 B2
+led5 D3
+led6 B1
+
+badge strap code 6f7365626f
+convert hex to text = osebo
+
+morsecode reads out = findonini
+
+how to dump the data from the chip
+avrdude -p m328p -P usb -c usbasp -U flash:r:flash.bin:r
+
+how to dump hexfile back to the badge
+avrdude -p m328p -P usb -c usbasp -U disobey2017badge.hex
